@@ -11,7 +11,8 @@
     "server": "json-server --watch src/data/db.json --delay 500",
     "start": "concurrently \"npm run server\" \"npm run dev\"",
     "test": "vitest",
-    "test:ui": "vitest --ui"
+    "test:ui": "vitest --ui",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@auth0/auth0-react": "^2.2.4",
@@ -34,6 +35,7 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",
+    "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^14.2.1",
     "@types/node": "^20.11.21",
     "@types/react": "^18.2.60",
