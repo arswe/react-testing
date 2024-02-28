@@ -6,7 +6,7 @@ import toast from 'react-hot-toast'
 import { Product } from '../entities/entities'
 import useCategories from '../hooks/useCategories'
 import { ProductFormData, productFormSchema } from '../validationSchemas/productSchema'
-import ErrorMessage from './ErrorMessage'
+import ErrorMessage from './shared/ErrorMessage'
 
 interface Props {
   product?: Product

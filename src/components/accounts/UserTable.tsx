@@ -1,4 +1,4 @@
-import { User } from '../entities/entities'
+import { User } from '../../entities/entities'
 
 const UserTable = ({ users }: { users: User[] }) => {
   if (users.length === 0) return <p>No users available.</p>

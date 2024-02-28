@@ -2,8 +2,8 @@ import { Badge, Flex, Text } from '@radix-ui/themes'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
 import { MdHome } from 'react-icons/md'
 import { Link, NavLink } from 'react-router-dom'
-import { useCart } from '../hooks/useCart'
-import AuthStatus from './AuthStatus'
+import { useCart } from '../../hooks/useCart'
+import AuthStatus from '../AuthStatus'
 import LanguageSelector from './LanguageSelector'
 
 const NavBar = () => {
