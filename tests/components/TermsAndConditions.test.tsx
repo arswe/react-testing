@@ -6,7 +6,7 @@ describe('TermsAndConditions', () => {
     render(<TermsAndConditions />)
     const heading = screen.getByRole('heading')
     expect(heading).toBeInTheDocument()
-    expect(heading).toHaveTextContent('Terms and Conditions')
+    expect(heading).toHaveTextContent('Terms & Conditions')
 
     const checkbox = screen.getByRole('checkbox')
     expect(checkbox).toBeInTheDocument()
