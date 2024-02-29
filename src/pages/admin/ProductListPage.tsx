@@ -10,9 +10,7 @@ const ProductListPage = withAuthenticationRequired(() => {
 
   const renderProducts = () => {
     if (isLoading) return <div>Loading...</div>
-
     if (error) return <div>Error: {error.message}</div>
-
     if (products!.length === 0) return <p>No product was found!</p>
 
     return (
