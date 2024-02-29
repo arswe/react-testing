@@ -25,5 +25,8 @@ describe('ExpandableText', () => {
     const button = screen.getByRole('button')
     const user = userEvent.setup()
     await user.click(button)
+
+    expect(screen.getByText(longText)).toBeInTheDocument()
+    expect(button).toHaveTextContent(/less/i)
   })
 })
