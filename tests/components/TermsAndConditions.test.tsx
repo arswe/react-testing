@@ -13,5 +13,13 @@ describe('TermsAndConditions', () => {
     }
   }
 
- 
+  it('should render with currect text adn initial state', () => {
+    const { heading, checkbox, button } = renderComponent()
+
+    expect(heading).toHaveTextContent('Terms & Conditions')
+    expect(checkbox).not.toBeChecked()
+    expect(button).toBeDisabled()
+  })
+
+  
 })
