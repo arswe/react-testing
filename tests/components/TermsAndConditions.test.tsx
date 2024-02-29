@@ -17,4 +17,8 @@ describe('TermsAndConditions', () => {
     expect(button).toHaveTextContent(/submit/i)
     expect(button).toBeDisabled()
   })
+
+  it('should enable the button when the checkbox is checked', () => {
+    render(<TermsAndConditions />)
+  })
 })
