@@ -5,6 +5,7 @@ import LogoutButton from './shared/LogoutButton'
 
 const AuthStatus = () => {
   const { user, isAuthenticated, isLoading } = useAuth0()
+  
   if (isLoading) return <div>Loading...</div>
 
   if (isAuthenticated)
