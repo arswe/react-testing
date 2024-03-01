@@ -3,9 +3,7 @@ import categoryReducer from './categorySlice'
 
 export const createStore = () =>
   configureStore({
-    reducer: {
-      category: categoryReducer,
-    },
+    reducer: { category: categoryReducer },
   })
 
 export const store = createStore()
