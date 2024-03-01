@@ -4,8 +4,9 @@ import { User } from '../../src/entities/entities'
 
 describe('UserList', () => {
   it('renders no users when the user array is empty', () => {
-    
+
     render(<UserList users={[]} />)
+    
     expect(screen.getByText(/no users available/i)).toBeInTheDocument()
   })
 
