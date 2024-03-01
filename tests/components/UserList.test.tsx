@@ -4,6 +4,7 @@ import { User } from '../../src/entities/entities'
 
 describe('UserList', () => {
   it('renders no users when the user array is empty', () => {
+    
     render(<UserList users={[]} />)
     expect(screen.getByText(/no users available/i)).toBeInTheDocument()
   })
@@ -14,7 +15,7 @@ describe('UserList', () => {
       { id: 2, name: 'john' },
     ]
     render(<UserList users={users} />)
-    
+
     users.forEach((user) => {
       const link = screen.getByRole('link', { name: user.name })
       expect(link).toBeInTheDocument()
