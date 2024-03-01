@@ -15,6 +15,7 @@ describe('ExpandableText', () => {
 
   it('should truncate text if longer then 255 charackters', () => {
     render(<ExpandableText text={longText} />)
+    
     expect(screen.getByText(truncatedText)).toBeInTheDocument()
     const button = screen.getByRole('button')
     expect(button).toHaveTextContent(/more/i)
