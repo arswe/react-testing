@@ -14,6 +14,7 @@ describe('UserList', () => {
       { id: 2, name: 'john' },
     ]
     render(<UserList users={users} />)
+    
     users.forEach((user) => {
       const link = screen.getByRole('link', { name: user.name })
       expect(link).toBeInTheDocument()
