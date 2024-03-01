@@ -11,11 +11,12 @@ describe('ExpandableText', () => {
     const text = 'short text'
     
     render(<ExpandableText text={text} />)
-    
+
     expect(screen.getByText(text)).toBeInTheDocument()
   })
 
   it('should truncate text if longer then 255 charackters', () => {
+    
     render(<ExpandableText text={longText} />)
 
     expect(screen.getByText(truncatedText)).toBeInTheDocument()
