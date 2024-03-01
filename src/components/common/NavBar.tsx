@@ -7,6 +7,7 @@ import AuthStatus from '../AuthStatus'
 import LanguageSelector from './LanguageSelector'
 
 const NavBar = () => {
+  
   const { getItemCount } = useCart()
 
   const links = [
