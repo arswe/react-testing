@@ -5,6 +5,7 @@ interface Props {
 }
 
 const SearchBox = ({ onChange }: Props) => {
+  
   const [searchTerm, setSearchTerm] = useState('')
 
   return (
