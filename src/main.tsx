@@ -6,7 +6,6 @@ import './index.css'
 import routes from './routes/routes'
 
 axios.defaults.baseURL = 'http://localhost:3000'
-
 const router = createBrowserRouter(routes)
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
